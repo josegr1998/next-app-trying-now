@@ -18,7 +18,7 @@ export default function Home({ notes }) {
       ) : (
         allNotes.map((note) => {
           return (
-            <div>
+            <div key={note._id}>
               <Link href='/create'>create note</Link>
               <h1>{note.title}</h1>
               <p>{note.description}</p>
