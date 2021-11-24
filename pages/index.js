@@ -30,7 +30,7 @@ export default function Home({ notes }) {
   );
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   let dev = process.env.NODE_ENV !== "production";
   let { DEV_URL, PROD_URL } = process.env;
 
